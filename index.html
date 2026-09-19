@@ -321,6 +321,16 @@
     .stack-card:nth-child(2) { top: 138px; }
     .stack-card:nth-child(3) { top: 188px; }
 
+    /* Luxury Minimalist FAQ Accordion */
+    details.faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+    details.faq-item[open] summary svg {
+      transform: rotate(180deg);
+    }
+    details.faq-item[open] {
+      border-color: rgba(0, 0, 0, 0.25);
+    }
   </style>
 </head>
 <body class="selection:bg-neutral-800 selection:text-white pb-20">
@@ -671,45 +681,81 @@
   </section>
 
   <!-- ==================== 5. PREGUNTAS FRECUENTES (SEO FAQ SCHEMA BOOST) ==================== -->
-  <section id="faq" class="bg-white py-20 sm:py-24 px-6 sm:px-12 border-b border-black/5">
-    <div class="max-w-[1240px] mx-auto">
+  <section id="faq" class="bg-[#0c1014] text-white py-20 sm:py-28 px-6 sm:px-12 border-b border-white/10">
+    <div class="max-w-[860px] mx-auto text-center">
       
-      <div class="mb-14">
-        <span class="reveal-on-scroll tag-mono mb-3 block section-beacon">05 / PREGUNTAS FRECUENTES (FAQ)</span>
-        <h2 class="reveal-on-scroll delay-100 text-2xl sm:text-[30px] font-medium tracking-tight text-[#081014] leading-[1.25]">
-          Respuestas claras a las dudas más habituales sobre Sucesiones y Divorcios.
-        </h2>
+      <div class="flex justify-center mb-4">
+        <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/15 text-xs font-mono text-neutral-300">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+          FAQ
+        </span>
       </div>
 
-      <div class="grid md:grid-cols-2 gap-8">
+      <h2 class="reveal-on-scroll text-2xl sm:text-[34px] font-medium tracking-tight text-white leading-[1.25] mb-4">
+        Respuestas claras a las dudas más habituales antes de iniciar.
+      </h2>
+      <p class="reveal-on-scroll delay-100 text-neutral-400 text-sm max-w-xl mx-auto mb-12">
+        Información precisa y sin tecnicismos para que tome decisiones con total seguridad patrimonial.
+      </p>
+
+      <!-- Accordion List Minimalista & Compacto -->
+      <div class="reveal-on-scroll delay-150 space-y-3 text-left">
         
-        <div class="p-6 rounded-2xl bg-[#f2f3f5] border border-black/5 space-y-2">
-          <h3 class="font-medium text-base text-[#081014]">¿Puedo tramitar una sucesión en CABA si el causante vivía en Provincia?</h3>
-          <p class="text-xs text-[#707070] leading-relaxed">
-            La ley establece que la sucesión se inicia en el último domicilio real del fallecido. Sin embargo, si existen bienes en CABA o prórroga de jurisdicción con acuerdo de herederos, analizamos la vía más conveniente y rápida.
-          </p>
-        </div>
+        <details class="faq-item group bg-[#161a1f] hover:bg-[#1a1f26] border border-white/10 rounded-2xl p-5 transition-all duration-200 cursor-pointer">
+          <summary class="flex items-center justify-between gap-4 list-none select-none font-medium text-[15px] sm:text-base text-white">
+            <span>¿Puedo tramitar una sucesión en CABA si el causante vivía en Provincia?</span>
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-neutral-400 group-hover:text-white transition-colors">
+              <svg class="w-4 h-4 transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </summary>
+          <div class="pt-4 text-xs sm:text-sm text-neutral-300 font-normal leading-relaxed border-t border-white/10 mt-3">
+            La ley establece como principio que la sucesión tramita en el último domicilio real del causante. Sin embargo, si existen bienes inmuebles radicados en CABA o prórroga de jurisdicción consentida por todos los herederos, analizamos la vía procesal más rápida y conveniente para reducir tiempos.
+          </div>
+        </details>
 
-        <div class="p-6 rounded-2xl bg-[#f2f3f5] border border-black/5 space-y-2">
-          <h3 class="font-medium text-base text-[#081014]">¿Qué es la venta por tracto abreviado y qué ventaja tiene?</h3>
-          <p class="text-xs text-[#707070] leading-relaxed">
-            Permite vender una propiedad heredada directamente al comprador final una vez dictada la declaratoria de herederos, evitando inscribir el inmueble a nombre de los herederos y ahorrando un doble gasto notarial.
-          </p>
-        </div>
+        <details class="faq-item group bg-[#161a1f] hover:bg-[#1a1f26] border border-white/10 rounded-2xl p-5 transition-all duration-200 cursor-pointer">
+          <summary class="flex items-center justify-between gap-4 list-none select-none font-medium text-[15px] sm:text-base text-white">
+            <span>¿Qué es la venta por tracto abreviado y qué ventaja tiene?</span>
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-neutral-400 group-hover:text-white transition-colors">
+              <svg class="w-4 h-4 transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </summary>
+          <div class="pt-4 text-xs sm:text-sm text-neutral-300 font-normal leading-relaxed border-t border-white/10 mt-3">
+            Permite vender una propiedad directamente al comprador definitivo una vez dictada la declaratoria de herederos y ordenada la inscripción. Esto evita tener que inscribir el inmueble primero a nombre de los herederos, ahorrando un doble gasto de sellados, tasas y aranceles notariales.
+          </div>
+        </details>
 
-        <div class="p-6 rounded-2xl bg-[#f2f3f5] border border-black/5 space-y-2">
-          <h3 class="font-medium text-base text-[#081014]">¿Cuánto demora un Divorcio Express?</h3>
-          <p class="text-xs text-[#707070] leading-relaxed">
-            En casos de común acuerdo (bilaterales), la sentencia suele dictarse entre 30 y 60 días según la carga del juzgado. En divorcios unilaterales, se notifica a la otra parte y se resuelve con celeridad sin audiencias previas obligatorias.
-          </p>
-        </div>
+        <details class="faq-item group bg-[#161a1f] hover:bg-[#1a1f26] border border-white/10 rounded-2xl p-5 transition-all duration-200 cursor-pointer">
+          <summary class="flex items-center justify-between gap-4 list-none select-none font-medium text-[15px] sm:text-base text-white">
+            <span>¿Cuánto demora un Divorcio Express y qué pasa si mi cónyuge no quiere firmar?</span>
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-neutral-400 group-hover:text-white transition-colors">
+              <svg class="w-4 h-4 transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </summary>
+          <div class="pt-4 text-xs sm:text-sm text-neutral-300 font-normal leading-relaxed border-t border-white/10 mt-3">
+            En casos de común acuerdo, la sentencia suele resolverse entre 30 y 60 días hábiles. Si la otra parte no desea firmar, se presenta como divorcio unilateral: la ley argentina no exige el consentimiento conyugal ni invocar motivos. Se decreta de forma inexorable.
+          </div>
+        </details>
 
-        <div class="p-6 rounded-2xl bg-[#f2f3f5] border border-black/5 space-y-2">
-          <h3 class="font-medium text-base text-[#081014]">¿Tengo que viajar a Mar del Plata o CABA para firmar?</h3>
-          <p class="text-xs text-[#707070] leading-relaxed">
-            No. Toda la presentación se realiza mediante escrito electrónico firmado digitalmente. Usted gestiona su trámite de manera remota desde su hogar con total validez legal.
-          </p>
-        </div>
+        <details class="faq-item group bg-[#161a1f] hover:bg-[#1a1f26] border border-white/10 rounded-2xl p-5 transition-all duration-200 cursor-pointer">
+          <summary class="flex items-center justify-between gap-4 list-none select-none font-medium text-[15px] sm:text-base text-white">
+            <span>¿Tengo que viajar a la oficina o a los tribunales para firmar?</span>
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-neutral-400 group-hover:text-white transition-colors">
+              <svg class="w-4 h-4 transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </summary>
+          <div class="pt-4 text-xs sm:text-sm text-neutral-300 font-normal leading-relaxed border-t border-white/10 mt-3">
+            No es necesario. La tramitación en CABA y Provincia de Buenos Aires se lleva a cabo en los portales judiciales electrónicos oficiales (PJN y Augusta/SCBA). Los escritos se firman digitalmente y los documentos se envían por WhatsApp o correo en PDF o foto legible.
+          </div>
+        </details>
 
       </div>
 
