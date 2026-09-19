@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Máximo Sabater | Abogado — Sucesiones, Divorcios & Laboral en CABA y PBA</title>
+  <meta name="description" content="Estudio Jurídico Dr. Máximo Sabater. Especialistas en Sucesiones, Declaratoria de Herederos, Divorcios Express y Accidentes Laborales (ART). Atención en CABA, Provincia de Buenos Aires y Mar del Plata." />
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/wsp-gold-clean.png" type="image/png" />
+
+  <!-- Fonts & Tailwind -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'serif'],
+            cinzel: ['"Cinzel"', 'serif'],
+          },
+          colors: {
+            brand: {
+              gold: '#d4af37',
+              goldLight: '#f5e7b2',
+              dark: '#050505',
+              navy: '#0b0b0e',
+              card: '#111115',
+              border: '#23232a',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .glass-nav {
+      background: rgba(8, 8, 10, 0.94);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+    }
+    .hero-glow {
+      background: radial-gradient(circle at 75% 25%, rgba(212, 175, 55, 0.08) 0%, transparent 60%),
+                  radial-gradient(circle at 15% 75%, rgba(18, 18, 24, 0.9) 0%, transparent 60%);
+    }
+    .gold-gradient-text {
+      background: linear-gradient(135deg, #fffbf0 0%, #d4af37 50%, #f5e7b2 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .gold-border {
+      border: 1px solid rgba(212, 175, 55, 0.22);
+    }
+    .card-hover {
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .card-hover:hover {
+      transform: translateY(-5px);
+      border-color: rgba(212, 175, 55, 0.5);
+      box-shadow: 0 20px 35px -10px rgba(0, 0, 0, 0.8), 0 0 20px rgba(212, 175, 55, 0.12);
+    }
+    /* Stacking Cards Accordion */
+    .stack-cards-container {
+      display: flex;
+      flex-direction: column;
+      gap: 2.25rem;
+      position: relative;
+    }
+    .stack-card {
+      position: sticky;
+      background: linear-gradient(145deg, #131317 0%, #09090b 100%);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .stack-card:nth-child(1) { top: 96px; }
+    .stack-card:nth-child(2) { top: 130px; }
+    .stack-card:nth-child(3) { top: 164px; }
+    .stack-card:nth-child(4) { top: 198px; }
+  </style>
+</head>
+<body class="bg-brand-dark text-slate-200 font-sans antialiased selection:bg-brand-gold selection:text-brand-dark">
+
+  <!-- Top Jurisdiction Banner -->
+  <div class="bg-black text-xs py-2 px-4 border-b border-neutral-800/80 text-slate-400">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+      <div class="flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span>Actuación directa en <strong>CABA</strong>, <strong>Provincia de Buenos Aires</strong> y <strong>Mar del Plata</strong></span>
+      </div>
+      <div class="flex items-center gap-4">
+        <span class="hidden sm:inline text-slate-500">Trámites 100% Digitales & Atención Presencial</span>
+        <span class="text-slate-700 hidden sm:inline">|</span>
+        <a href="https://api.whatsapp.com/send?phone=5492235809067&text=Hola%20Dr.%20M%C3%A1ximo%20Sabater%2C%20le%20escribo%20para%20hacerle%20una%20consulta%20legal." target="_blank" class="hover:text-brand-goldLight transition flex items-center gap-1.5 text-brand-gold font-medium">
+          <i data-lucide="phone" class="w-3.5 h-3.5"></i> 223 580-9067
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Navbar -->
+  <header class="sticky top-0 z-50 glass-nav">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3.5 group">
+        <div class="w-12 h-12 rounded-xl bg-gradient-to-b from-[#16161b] to-black flex items-center justify-center p-2 shadow-lg shadow-brand-gold/15 gold-border group-hover:scale-105 transition">
+          <i data-lucide="scale" class="w-7 h-7 text-brand-gold"></i>
+        </div>
+        <div>
+          <span class="block font-cinzel text-xl font-bold tracking-wider text-white">DR. MÁXIMO SABATER</span>
+          <span class="block text-[10px] uppercase tracking-widest text-brand-gold font-semibold">Estudio Jurídico & Asociados</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-300">
+        <a href="#inicio" class="text-brand-gold font-semibold hover:text-brand-goldLight transition">Inicio</a>
+        <a href="#especialidades" class="hover:text-brand-gold transition">Especialidades</a>
+        <a href="#sucesiones" class="hover:text-brand-gold transition">Sucesiones</a>
+        <a href="#divorcios" class="hover:text-brand-gold transition">Divorcios</a>
+        <a href="#art-laboral" class="hover:text-brand-gold transition">ART / Laboral</a>
+        <a href="#trayectoria" class="hover:text-brand-gold transition">El Estudio</a>
+        <a href="#contacto" class="hover:text-brand-gold transition">Contacto</a>
+      </nav>
+
+      <!-- CTA Button con Logo WhatsApp Dorado -->
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="https://api.whatsapp.com/send?phone=5492235809067&text=Hola%20Dr.%20M%C3%A1ximo%20Sabater%2C%20necesito%20hacerle%20una%20consulta%20legal%20desde%20Buenos%20Aires." target="_blank" class="inline-flex items-center gap-2.5 bg-[#0e0e11] hover:bg-[#17171d] text-brand-gold hover:text-brand-goldLight border border-brand-gold/40 hover:border-brand-gold font-bold text-sm px-4 py-1.5 rounded-full shadow-lg shadow-black/80 transition group hover:scale-105">
+          <div class="w-6 h-6 rounded-full bg-black flex items-center justify-center p-0.5 border border-brand-gold/30">
+            <img src="assets/wsp-gold-clean.png" alt="WhatsApp Dorado" class="w-full h-full object-contain group-hover:rotate-6 transition" />
+          </div>
+          <span>Consulta Directa</span>
+        </a>
+      </div>
+
+      <!-- Mobile Button -->
+      <button id="mobile-toggle" class="md:hidden p-2 text-slate-300 hover:text-white" aria-label="Abrir menú">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Menu Dropdown -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#0e0e11] border-b border-brand-gold/20 px-6 py-5 space-y-3">
+      <a href="#inicio" class="block text-slate-200 py-1">Inicio</a>
+      <a href="#especialidades" class="block text-slate-200 py-1">Especialidades</a>
+      <a href="#sucesiones" class="block text-slate-200 py-1">Sucesiones en CABA y PBA</a>
+      <a href="#divorcios" class="block text-slate-200 py-1">Divorcios Express</a>
+      <a href="#art-laboral" class="block text-slate-200 py-1">ART & Accidentes de Trabajo</a>
+      <a href="#trayectoria" class="block text-slate-200 py-1">Sobre el Dr. Sabater</a>
+      <a href="#contacto" class="block text-slate-200 py-1">Contacto</a>
+      <a href="https://api.whatsapp.com/send?phone=5492235809067&text=Hola%20Dr.%20M%C3%A1ximo%20Sabater%2C%20le%20escribo%20para%20iniciar%20una%20consulta." target="_blank" class="w-full text-center mt-3 flex items-center justify-center gap-2.5 bg-gradient-to-r from-brand-gold to-brand-goldLight text-brand-dark font-bold py-3 rounded-xl shadow-lg">
+        <i data-lucide="message-square" class="w-4 h-4"></i>
+        <span>Consultar por WhatsApp</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="inicio" class="relative hero-glow pt-12 pb-20 lg:pt-16 lg:pb-28 overflow-hidden border-b border-neutral-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Hero Text Content -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-gold/15 border border-brand-gold/30 text-brand-goldLight text-xs font-bold tracking-wider uppercase">
+            <i data-lucide="shield-check" class="w-3.5 h-3.5 text-brand-gold"></i>
+            <span>Jurisdicción Nacional • CABA, Gran Buenos Aires & Mar del Plata</span>
+          </div>
+
+          <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.15]">
+            Resolución experta de <span class="gold-gradient-text">Sucesiones, Divorcios</span> y Reclamos Laborales.
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-300 max-w-2xl leading-relaxed">
+            Abogado egresado de la <strong>Universidad Nacional de Mar del Plata</strong> con actuación jurídica plena en tribunales de <strong>Ciudad de Buenos Aires (CABA) y Provincia de Buenos Aires</strong>. Tramitamos su causa con celeridad, expediente 100% digitalizado y acuerdos de honorarios claros.
+          </p>
+
+          <!-- Key Benefit Bullets -->
+          <div class="grid sm:grid-cols-2 gap-3 pt-2">
+            <div class="flex items-center gap-2.5 text-sm text-slate-200">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-brand-gold shrink-0"></i>
+              <span><strong>Sucesiones:</strong> pague honorarios al vender.</span>
+            </div>
+            <div class="flex items-center gap-2.5 text-sm text-slate-200">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-brand-gold shrink-0"></i>
+              <span><strong>Divorcio Express:</strong> sin audiencias innecesarias.</span>
+            </div>
+            <div class="flex items-center gap-2.5 text-sm text-slate-200">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-brand-gold shrink-0"></i>
+              <span><strong>Accidentes de Trabajo:</strong> a porcentaje del resultado.</span>
+            </div>
+            <div class="flex items-center gap-2.5 text-sm text-slate-200">
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-brand-gold shrink-0"></i>
+              <span><strong>Gestión Digital:</strong> sin traslados ni pérdidas de tiempo.</span>
+            </div>
+          </div>
+
+          <!-- CTAs -->
+          <div class="pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+            <a href="https://api.whatsapp.com/send?phone=5492235809067&text=Hola%20Dr.%20M%C3%A1ximo%20Sabater%2C%20le%20escribo%20desde%20Buenos%20Aires%20para%20iniciar%20un%20tr%C3%A1mite%20legal." target="_blank" class="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-brand-gold to-brand-goldLight text-brand-dark font-bold px-7 py-4 rounded-2xl shadow-xl shadow-brand-gold/20 hover:brightness-110 transition group">
+              <img src="assets/wsp-gold-clean.png" alt="WhatsApp" class="w-5 h-5 object-contain group-hover:scale-110 transition" />
+              <span>Contactar al Dr. Sabater por WhatsApp</span>
+            </a>
+            <a href="#especialidades" class="inline-flex items-center justify-center gap-2 bg-[#121216] hover:bg-[#181820] text-slate-200 border border-neutral-700/80 font-semibold px-6 py-4 rounded-2xl transition">
+              <span>Ver Especialidades</span>
+              <i data-lucide="arrow-down" class="w-4 h-4 text-brand-gold"></i>
+            </a>
+          </div>
+
+          <!-- Trust Badges -->
+          <div class="pt-6 border-t border-neutral-800/80 flex flex-wrap items-center gap-6 text-xs text-slate-400">
+            <div class="flex items-center gap-2">
+              <i data-lucide="award" class="w-4 h-4 text-brand-gold"></i>
+              <span>UNMDP • Egresado de Derecho</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="landmark" class="w-4 h-4 text-brand-gold"></i>
+              <span>CABA • Fuero Civil & Laboral</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="map-pin" class="w-4 h-4 text-brand-gold"></i>
+              <span>Sede Moreno 2689 / Alberti 1220</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Photo / Visual Card -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md">
+            
+            <!-- Glow Aura -->
+            <div class="absolute -inset-1 bg-gradient-to-r from-brand-gold/30 to-amber-700/20 rounded-3xl blur-2xl opacity-50"></div>
+            
+            <!-- Card Container -->
+            <div class="relative bg-[#0d0d10] p-3 rounded-3xl gold-border shadow-2xl overflow-hidden">
+              <div class="aspect-[4/5] rounded-2xl overflow-hidden relative">
+                <img src="assets/maximo-sabater-despacho.png" alt="Dr. Máximo Sabater Abogado en su despacho" class="w-full h-full object-cover object-top hover:scale-105 transition duration-700" />
+                
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+                
+                <!-- Overlay Card Credential -->
+                <div class="absolute bottom-4 left-4 right-4 bg-[#111115]/90 backdrop-blur-md p-4 rounded-xl border border-brand-gold/30">
+                  <div class="flex items-center justify-between">
+                    <div>
+                      <h4 class="font-cinzel text-base font-bold text-white">Dr. Máximo Sabater</h4>
+                      <p class="text-xs text-brand-gold font-medium">Abogado Titular • Sucesiones & Familia</p>
+                    </div>
+                    <div class="w-9 h-9 rounded-lg bg-brand-gold/20 flex items-center justify-center text-brand-gold">
+                      <i data-lucide="award" class="w-5 h-5"></i>
+                    </div>
+                  </div>
+                  <p class="text-[11px] text-slate-400 mt-2 leading-tight">
+                    Atención personalizada de cada causa con dedicación exclusiva y respuesta directa vía WhatsApp.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Quick stats underneath -->
+              <div class="grid grid-cols-3 gap-2 p-3 text-center border-t border-neutral-800/80 mt-1">
+                <div>
+                  <span class="block text-lg font-bold text-white">+15</span>
+                  <span class="block text-[10px] uppercase text-slate-400">Años Exp.</span>
+                </div>
+                <div>
+                  <span class="block text-lg font-bold text-brand-gold">100%</span>
+                  <span class="block text-[10px] uppercase text-slate-400">Digital</span>
+                </div>
+                <div>
+                  <span class="block text-lg font-bold text-white">CABA/PBA</span>
+                  <span class="block text-[10px] uppercase text-slate-400">Alcance</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Por Qué Clientes de Buenos Aires Eligen al Dr. Sabater -->
+  <section class="py-16 bg-[#0a0a0d] border-b border-neutral-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-xs font-bold text-brand-gold uppercase tracking-wider">Ventajas Clave</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white mt-1">¿Por qué confiar su caso en Buenos Aires?</h2>
+        <p class="text-sm text-slate-400 mt-3">
+          El sistema judicial actual es enteramente electrónico (MEV en PBA y PJN en Nación/CABA). Tramitamos su expediente con la misma inmediatez y eficacia que en persona, ahorrándole costos innecesarios.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-[#101014] p-8 rounded-2xl gold-border card-hover space-y-3">
+          <div class="w-12 h-12 rounded-xl bg-brand-gold/15 text-brand-gold flex items-center justify-center">
+            <i data-lucide="laptop" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-serif text-xl font-bold text-white">Sin Traslados ni Fricción</h3>
+          <p class="text-sm text-slate-300 leading-relaxed">
+            Presentación de demandas, oficios, partidas y cédulas mediante firma digital. Usted firma desde la comodidad de su casa sin necesidad de viajar ni perder mañanas enteras en tribunales.
+          </p>
+        </div>
+
+        <div class="bg-[#101014] p-8 rounded-2xl gold-border card-hover space-y-3">
+          <div class="w-12 h-12 rounded-xl bg-brand-gold/15 text-brand-gold flex items-center justify-center">
+            <i data-lucide="badge-dollar-sign" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-serif text-xl font-bold text-white">Honorarios al Final</h3>
+          <p class="text-sm text-slate-300 leading-relaxed">
+            En juicios sucesorios acordamos el pago de honorarios profesionales al momento de concretar la venta de la propiedad heredada por tracto abreviado. Sin gastos asfixiantes por adelantado.
+          </p>
+        </div>
+
+        <div class="bg-[#101014] p-8 rounded-2xl gold-border card-hover space-y-3">
+          <div class="w-12 h-12 rounded-xl bg-brand-gold/15 text-brand-gold flex items-center justify-center">
+            <i data-lucide="messages-square" class="w-6 h-6"></i>
+          </div>
+          <h3 class="font-serif text-xl font-bold text-white">Comunicación Directa</h3>
+          <p class="text-sm text-slate-300 leading-relaxed">
+            Habla directamente con el Dr. Máximo Sabater, no con secretarias ni intermediarios. Cada avance del expediente se le notifica al instante vía WhatsApp con captura del movimiento judicial.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Especialidades: STACKING CARDS ACCORDION -->
+  <section id="especialidades" class="py-20 bg-brand-dark">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold text-brand-gold uppercase tracking-wider">Áreas de Práctica</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white mt-2">Especialidades del Estudio</h2>
+        <div class="w-16 h-1 bg-brand-gold mx-auto mt-4 rounded-full"></div>
+        <p class="text-sm text-slate-400 mt-4">
+          Haga scroll para recorrer cada área de práctica con su alcance procesal y vías de inicio de trámite.
+        </p>
+      </div>
+
+      <!-- STACKING CARDS CONTAINER -->
+      <div class="max-w-4xl mx-auto stack-cards-container pb-28">
+        
+        <!-- Card 1: Sucesiones & Declaratoria de Herederos -->
+        <div id="sucesiones" class="stack-card rounded-3xl p-7 sm:p-10 gold-border shadow-[0_30px_70px_-15px_rgba(0,0,0,0.95)] flex flex-col md:flex-row items-start md:items-center justify-between gap-6 hover:border-brand-gold/50">
+          <div class="space-y-3 max-w-2xl">
+            <div class="flex items-center gap-3">
+              <span class="text-xs font-mono font-bold text-brand-gold px-2.5 py-1 rounded bg-brand-gold/10 border border-brand-gold/30">01 / ESPECIALIDAD PRINCIPAL</span>
+              <span class="text-xs text-slate-400 uppercase tracking-wider font-semibold">CABA & Provincia de Buenos Aires</span>
+            </div>
+            <h3 class="font-serif text-2xl sm:text-3xl font-bold text-white flex items-center gap-3">
+              <span>Sucesiones & Herencias</span>
+              <i data-lucide="landmark" class="w-6 h-6 text-brand-gold"></i>
+            </h3>
+            <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
+              Inicio urgente de juicios sucesorios (ab-intestato y testamentarios). Obtención ágil de Declaratoria de Herederos, pedido de informes registrales y venta de inmuebles o automotores por <strong>tracto abreviado</strong>. Convenios de honorarios con posibilidad de abonar una vez vendida la propiedad heredada.
+            </p>
+          </div>
+          <div class="shrink-0 w-full md:w-auto">
+            <a href="https://api.whatsapp.com/send?phone=5492235809067&text=Hola%20Dr.%20M%C3%A1ximo%20Sabater%2C%20le%20escribo%20para%20iniciar%20una%20Sucesi%C3%B3n%20en%20Buenos%20Aires." target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-gradient-to-r from-brand-gold to-brand-goldLight text-brand-dark font-bold text-sm px-6 py-3.5 rounded-2xl shadow-xl shadow-brand-gold/20 hover:brightness-110 transition group">
+              <img src="assets/wsp-gold-clean.png" alt="WhatsApp" class="w-5 h-5 object-contain group-hover:scale-110 transition" />
+              <span>Iniciar Sucesión</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 2: Divorcios Express -->
+        <div id="divorcios" class="stack-card rounded-3xl p-7 sm:p-10 gold-border shadow-[0_30px_70px_-15px_rgba(0,0,0,0.95)] flex flex-col md:flex-row items-start md:items-center justify-between gap-6 hover:border-brand-gold/50">
+          <div class="space-y-3 max-w-2xl">
+            <div class="flex items-center gap-3">
+              <span class="text-xs font-mono font-bold text-brand-gold px-2.5 py-1 rounded bg-brand-gold/10 border border-brand-gold/30">02 / ESPECIALIDAD</span>
+              <span class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Derecho de Familia</span>
+            </div>
+            <h3 class="font-serif text-2xl sm:text-3xl font-bold text-white flex items-center gap-3">
+              <span>Divorcios Express & Alimentos</span>
+              <i data-lucide="heart-handshake" class="w-6 h-6 text-brand-gold"></i>
+            </h3>
+            <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
+              Trámite de divorcio unilateral o bilateral (de mutuo acuerdo) según el nuevo Código Civil y Comercial. Sin necesidad de invocar motivos ni esperar plazos de separación. Convenios reguladores para cuota de alimentos, régimen de comunicación con los hijos y partición equitativa de bienes gananciales.
+            </p>
+          </div>
+          <div class="shrink-0 w-full md:w-auto">
+            <a href="https://api.whatsapp.com/send?phone=5492235809067&text=Hola%20Dr.%20M%C3%A1ximo%20Sabater%2C%20le%20escribo%20para%20consultar%20por%20un%20tr%C3%A1mite%20de%20Divorcio." target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-gradient-to-r from-brand-gold to-brand-goldLight text-brand-dark font-bold text-sm px-6 py-3.5 rounded-2xl shadow-xl shadow-brand-gold/20 hover:brightness-110 transition group">
+              <img src="assets/wsp-gold-clean.png" alt="WhatsApp" class="w-5 h-5 object-contain group-hover:scale-110 transition" />
+              <span>Consultar Divorcio</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 3: Accidentes de Trabajo (ART) -->
+        <div id="art-laboral" class="stack-card rounded-3xl p-7 sm:p-10 gold-border shadow-[0_30px_70px_-15px_rgba(0,0,0,0.95)] flex flex-col md:flex-row items-start md:items-center justify-between gap-6 hover:border-brand-gold/50">
+          <div class="space-y-3 max-w-2xl">
+            <div class="flex items-center gap-3">
+              <span class="text-xs font-mono font-bold text-brand-gold px-2.5 py-1 rounded bg-brand-gold/10 border border-brand-gold/30">03 / ESPECIALIDAD</span>
+              <span class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Comisión Médica & Juicio a ART</span>
+            </div>
+            <h3 class="font-serif text-2xl sm:text-3xl font-bold text-white flex items-center gap-3">
+              <span>Accidentes de Trabajo / ART</span>
+              <i data-lucide="shield-alert" class="w-6 h-6 text-brand-gold"></i>
+            </h3>
+            <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
+              Reclamos indemnizatorios por accidentes laborales o enfermedades profesionales contra la ART. Asistencia letrada ante Comisión Médica Jurisdiccional (SRT) e impugnación judicial por altas médicas prematuras o porcentajes de incapacidad rebajados. Cobro a porcentaje contra indemnización cobrada.
+            </p>
+          </div>
+          <div class="shrink-0 w-full md:w-auto">
+            <a href="https://api.whatsapp.com/send?phone=5492235809067&text=Hola%20Dr.%20M%C3%A1ximo%20Sabater%2C%20tuve%20un%20accidente%20de%20trabajo%20y%20quiero%20reclamar%20a%20la%20ART." target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-gradient-to-r from-brand-gold to-brand-goldLight text-brand-dark font-bold text-sm px-6 py-3.5 rounded-2xl shadow-xl shadow-brand-gold/20 hover:brightness-110 transition group">
+              <img src="assets/wsp-gold-clean.png" alt="WhatsApp" class="w-5 h-5 object-contain group-hover:scale-110 transition" />
+              <span>Reclamar a ART</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 4: Despidos & Conflictos Laborales -->
+        <div class="stack-card rounded-3xl p-7 sm:p-10 gold-border shadow-[0_30px_70px_-15px_rgba(0,0,0,0.95)] flex flex-col md:flex-row items-start md:items-center justify-between gap-6 hover:border-brand-gold/50">
+          <div class="space-y-3 max-w-2xl">
+            <div class="flex items-center gap-3">
+              <span class="text-xs font-mono font-bold text-brand-gold px-2.5 py-1 rounded bg-brand-gold/10 border border-brand-gold/30">04 / ESPECIALIDAD</span>
+              <span class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Defensa del Trabajador</span>
+            </div>
+            <h3 class="font-serif text-2xl sm:text-3xl font-bold text-white flex items-center gap-3">
+              <span>Despidos & Diferencias Salariales</span>
+              <i data-lucide="briefcase" class="w-6 h-6 text-brand-gold"></i>
+            </h3>
+            <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
+              Despidos sin justa causa, trabajo no registrado ("en negro"), diferencias de liquidación final, suspensiones indebidas y representación en audiencias de conciliación obligatoria (SECLO en CABA / Ministerio de Trabajo en PBA).
+            </p>
+          </div>
+          <div class="shrink-0 w-full md:w-auto">
+            <a href="https://api.whatsapp.com/send?phone=5492235809067&text=Hola%20Dr.%20M%C3%A1ximo%20Sabater%2C%20tengo%20un%20conflicto%20laboral%20%2F%20despido." target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-gradient-to-r from-brand-gold to-brand-goldLight text-brand-dark font-bold text-sm px-6 py-3.5 rounded-2xl shadow-xl shadow-brand-gold/20 hover:brightness-110 transition group">
+              <img src="assets/wsp-gold-clean.png" alt="WhatsApp" class="w-5 h-5 object-contain group-hover:scale-110 transition" />
+              <span>Calcular Indemnización</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Videos / Reels del Dr. Sabater -->
+  <section class="py-20 bg-[#0c0c10] border-y border-neutral-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold text-brand-gold uppercase tracking-wider">Claridad Jurídica</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white mt-2">El Dr. Sabater le explica en video</h2>
+        <div class="w-16 h-1 bg-brand-gold mx-auto mt-4 rounded-full"></div>
+        <p class="text-sm text-slate-400 mt-4">
+          Respuestas concretas y sin vueltas a las dudas más frecuentes sobre trámites sucesorios y divorcios.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        
+        <!-- Video Card 1: Sucesiones -->
+        <div class="bg-[#121217] rounded-3xl gold-border p-6 space-y-4 shadow-xl">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2 text-brand-gold text-xs font-bold uppercase tracking-wider">
+              <i data-lucide="video" class="w-4 h-4"></i>
+              <span>Reel Explicativo</span>
+            </div>
+            <span class="text-xs text-slate-400">Instagram @estudiosabater</span>
+          </div>
+
+          <h3 class="font-serif text-xl font-bold text-white">¿Cómo tramitar una Sucesión y cuándo se pagan los honorarios?</h3>
+          <p class="text-sm text-slate-300">
+            En este video, el Dr. Máximo Sabater explica los pasos esenciales: partida de defunción, acreditación de vínculo, publicación de edictos y la posibilidad de abonar gastos una vez que se vende la propiedad.
+          </p>
+
+          <div class="pt-2">
+            <a href="https://www.instagram.com/p/DZLfA2px5X7/" target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-[#1b1b22] hover:bg-brand-gold hover:text-brand-dark text-slate-200 border border-brand-gold/30 font-semibold py-3 rounded-xl transition group">
+              <i data-lucide="play" class="w-4 h-4 text-brand-gold group-hover:text-brand-dark"></i>
+              <span>Ver Video de Sucesiones en Instagram</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Video Card 2: Divorcios -->
+        <div class="bg-[#121217] rounded-3xl gold-border p-6 space-y-4 shadow-xl">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2 text-brand-gold text-xs font-bold uppercase tracking-wider">
+              <i data-lucide="video" class="w-4 h-4"></i>
+              <span>Reel Explicativo</span>
+            </div>
+            <span class="text-xs text-slate-400">Instagram @estudiosabater</span>
+          </div>
+
+          <h3 class="font-serif text-xl font-bold text-white">Divorcio Express: ¿Qué pasa si la otra parte no quiere firmar?</h3>
+          <p class="text-sm text-slate-300">
+            El Dr. Sabater detalla el procedimiento del divorcio unilateral: nadie está obligado a permanecer casado y la sentencia sale igual sin necesidad de consentimiento del cónyuge.
+          </p>
+
+          <div class="pt-2">
+            <a href="https://www.instagram.com/p/DaBuaNAxQ9-/" target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-[#1b1b22] hover:bg-brand-gold hover:text-brand-dark text-slate-200 border border-brand-gold/30 font-semibold py-3 rounded-xl transition group">
+              <i data-lucide="play" class="w-4 h-4 text-brand-gold group-hover:text-brand-dark"></i>
+              <span>Ver Video de Divorcios en Instagram</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Sección Despacho & Trayectoria -->
+  <section id="trayectoria" class="py-20 bg-brand-dark">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left photo: Consultation in office -->
+        <div class="lg:col-span-5 relative">
+          <div class="rounded-3xl overflow-hidden gold-border shadow-2xl relative">
+            <img src="assets/maximo-atencion-cliente.jpg" alt="Dr. Máximo Sabater atendiendo a un cliente en su despacho" class="w-full h-auto object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+            <div class="absolute bottom-4 left-4 right-4 text-xs text-slate-300 bg-black/60 backdrop-blur-sm p-3 rounded-xl border border-white/10">
+              <p class="font-medium text-white">Atención personalizada y confidencialidad absoluta</p>
+              <p class="text-[11px] text-slate-400 mt-0.5">Despacho profesional • Sede Moreno 2689</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right content -->
+        <div class="lg:col-span-7 space-y-6">
+          <span class="text-xs font-bold text-brand-gold uppercase tracking-wider">Trayectoria & Solvencia</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white">
+            Un ejercicio del derecho cercano, transparente y resolutivo.
+          </h2>
+
+          <p class="text-slate-300 leading-relaxed text-sm sm:text-base">
+            El <strong>Dr. Máximo Sabater</strong> cuenta con más de 15 años de ejercicio ininterrumpido en la profesión, formado en la prestigiosa Facultad de Derecho de la <strong>Universidad Nacional de Mar del Plata (UNMDP)</strong> y con constante intervención en litigios del Fuero Civil, Comercial y Laboral.
+          </p>
+
+          <p class="text-slate-300 leading-relaxed text-sm sm:text-base">
+            Su estudio se caracteriza por modernizar la atención jurídica tradicional: desterrar trámites burocráticos innecesarios, acelerar la obtención de sentencias y declaratorias mediante herramientas digitales avanzadas, y brindar previsibilidad económica a cada cliente desde el primer contacto.
+          </p>
+
+          <div class="grid sm:grid-cols-2 gap-4 pt-2">
+            <div class="p-4 rounded-xl bg-[#0f0f13] border border-neutral-800/80">
+              <div class="flex items-center gap-3">
+                <i data-lucide="check" class="w-5 h-5 text-brand-gold"></i>
+                <span class="font-bold text-white text-sm">Matrícula Activa</span>
+              </div>
+              <p class="text-xs text-slate-400 mt-1">Habilitación plena para litigar en Provincia de Buenos Aires y Capital Federal.</p>
+            </div>
+
+            <div class="p-4 rounded-xl bg-[#0f0f13] border border-neutral-800/80">
+              <div class="flex items-center gap-3">
+                <i data-lucide="clock" class="w-5 h-5 text-brand-gold"></i>
+                <span class="font-bold text-white text-sm">Respuesta en el Día</span>
+              </div>
+              <p class="text-xs text-slate-400 mt-1">Canal de WhatsApp exclusivo para seguimiento directo de su causa.</p>
+            </div>
+          </div>
+
+          <div class="pt-2">
+            <a href="https://api.whatsapp.com/send?phone=5492235809067&text=Hola%20Dr.%20M%C3%A1ximo%2C%20quisiera%20coordinar%20una%20consulta%20legal." target="_blank" class="inline-flex items-center gap-2.5 text-brand-gold hover:text-brand-goldLight font-bold text-sm">
+              <span>Coordinar una primera consulta sin cargo</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Formulario / Contacto Directo -->
+  <section id="contacto" class="py-20 bg-[#09090c] border-t border-neutral-800/80">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="bg-brand-dark p-8 sm:p-12 rounded-3xl gold-border shadow-2xl space-y-8">
+        <div class="text-center space-y-3">
+          <span class="text-xs font-bold text-brand-gold uppercase tracking-wider">Contacto Inmediato</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white">Inicie su Consulta con el Dr. Sabater</h2>
+          <p class="text-sm text-slate-400 max-w-xl mx-auto">
+            Complete los datos o envíe un mensaje directo. Su caso será analizado con reserva y prontitud legal.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8 items-center pt-4">
+          
+          <!-- Contact Info Column -->
+          <div class="space-y-6">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-brand-gold/15 text-brand-gold flex items-center justify-center shrink-0">
+                <i data-lucide="map-pin" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="text-white font-bold text-sm">Sedes de Atención</h4>
+                <p class="text-xs text-slate-400 leading-relaxed mt-0.5">
+                  • <strong>Mar del Plata:</strong> Moreno 2689 / Alberti 1220 (Zona Güemes)<br>
+                  • <strong>CABA:</strong> Av. Escalada 32, 1° B
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-brand-gold/15 text-brand-gold flex items-center justify-center shrink-0">
+                <i data-lucide="phone-call" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="text-white font-bold text-sm">Teléfono / WhatsApp Directo</h4>
+                <p class="text-xs text-slate-400 mt-0.5">+54 9 223 580-9067 (Lunes a Viernes de 9 a 19 hs)</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-brand-gold/15 text-brand-gold flex items-center justify-center shrink-0">
+                <i data-lucide="mail" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="text-white font-bold text-sm">Trámite Electrónico</h4>
+                <p class="text-xs text-slate-400 mt-0.5">Recepción de partidas, escrituras y documentación por PDF / WhatsApp</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Direct Form to WhatsApp -->
+          <form onsubmit="sendFormWsp(event)" class="bg-[#111115] p-6 rounded-2xl border border-brand-gold/20 space-y-4">
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-1">Nombre y Apellido</label>
+              <input type="text" id="form-name" required placeholder="Ej. Carlos Martínez" class="w-full bg-black/60 border border-neutral-700/80 rounded-xl px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-brand-gold" />
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-1">Localidad o Zona</label>
+              <input type="text" id="form-location" required placeholder="Ej. CABA / Morón / San Isidro / Mardel" class="w-full bg-black/60 border border-neutral-700/80 rounded-xl px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-brand-gold" />
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 mb-1">Tipo de Consulta</label>
+              <select id="form-type" class="w-full bg-black/60 border border-neutral-700/80 rounded-xl px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-brand-gold">
+                <option>Sucesión / Declaratoria de Herederos</option>
+                <option>Divorcio Express / Alimentos</option>
+                <option>Accidente de Trabajo / Reclamo a ART</option>
+                <option>Despido o Conflicto Laboral</option>
+                <option>Otro trámite judicial</option>
+              </select>
+            </div>
+
+            <button type="submit" class="w-full py-3.5 bg-gradient-to-r from-brand-gold to-brand-goldLight text-brand-dark font-bold text-sm rounded-xl shadow-lg transition hover:brightness-110 flex items-center justify-center gap-2">
+              <img src="assets/wsp-gold-clean.png" alt="WhatsApp" class="w-4 h-4 object-contain" />
+              <span>Enviar Consulta a WhatsApp</span>
+            </button>
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black py-8 border-t border-slate-900 text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+      <div class="flex items-center gap-3">
+        <i data-lucide="scale" class="w-5 h-5 text-brand-gold"></i>
+        <span class="font-cinzel font-bold text-brand-gold">DR. MÁXIMO SABATER</span>
+        <span>• Estudio Jurídico en CABA y Mar del Plata</span>
+      </div>
+      <div>
+        &copy; 2026 Dr. Máximo Sabater & Asociados. Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script Navigation & Icons -->
+  <script>
+    lucide.createIcons();
+
+    const toggle = document.getElementById('mobile-toggle');
+    const menu = document.getElementById('mobile-menu');
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+
+    function sendFormWsp(e) {
+      e.preventDefault();
+      const name = document.getElementById('form-name').value.trim();
+      const location = document.getElementById('form-location').value.trim();
+      const type = document.getElementById('form-type').value;
+
+      const text = `Hola Dr. Máximo Sabater, mi nombre es ${name} (${location}). Le escribo desde su sitio web para consultar por: ${type}.`;
+      const url = `https://api.whatsapp.com/send?phone=5492235809067&text=${encodeURIComponent(text)}`;
+      window.open(url, '_blank');
+    }
+  </script>
+
+  <!-- Botón Flotante WhatsApp Dorado de Lujo -->
+  <a href="https://api.whatsapp.com/send?phone=5492235809067&text=Hola%20Dr.%20M%C3%A1ximo%20Sabater%2C%20le%20escribo%20para%20hacerle%20una%20consulta%20legal%20urgente." target="_blank" class="fixed bottom-6 right-6 z-50 flex items-center gap-2.5 bg-[#0e0e12]/95 hover:bg-[#16161d] backdrop-blur-md gold-border p-2.5 pr-4 rounded-full shadow-2xl shadow-brand-gold/20 group transition duration-300 hover:scale-105">
+    <div class="w-11 h-11 rounded-full bg-black flex items-center justify-center p-1.5 border border-brand-gold/30 shadow-inner">
+      <img src="assets/wsp-gold-clean.png" alt="WhatsApp Dorado" class="w-full h-full object-contain group-hover:rotate-12 transition" />
+    </div>
+    <div class="hidden sm:block text-left">
+      <span class="block text-[10px] text-slate-400 leading-none">Consulta Directa</span>
+      <span class="block text-xs font-bold text-brand-gold">WhatsApp Dr. Sabater</span>
+    </div>
+  </a>
+
+</body>
+</html>
