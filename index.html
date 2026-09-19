@@ -296,6 +296,28 @@
     .marquee-track:hover {
       animation-play-state: paused;
     }
+
+    /* Stacking Cards Accordion Effect */
+    .stack-cards-container {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      position: relative;
+    }
+    .stack-card {
+      position: sticky;
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 1.5rem;
+      box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.12), 0 0 1px 1px rgba(0, 0, 0, 0.04);
+      transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease;
+      will-change: transform;
+      overflow: hidden;
+    }
+    .stack-card:nth-child(1) { top: 96px; }
+    .stack-card:nth-child(2) { top: 130px; }
+    .stack-card:nth-child(3) { top: 164px; }
+
   </style>
 </head>
 <body class="selection:bg-neutral-800 selection:text-white pb-20">
@@ -435,64 +457,96 @@
         </h2>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="max-w-4xl mx-auto stack-cards-container pb-28">
         
-        <!-- Tarjeta 1: Sucesiones & Herencias (Foto genérica de alta gama de firma/documentos) -->
-        <div class="reveal-on-scroll delay-100 service-card group cursor-pointer" onclick="window.open('https://api.whatsapp.com/send?phone=5492235809067&text=Hola%20Dr.%20M%C3%A1ximo%20Sabater%2C%20le%20escribo%20para%20iniciar%20una%20Sucesi%C3%B3n.', '_blank')">
-          <div class="relative w-full aspect-[4/5] bg-neutral-900 overflow-hidden mb-5">
-            <img src="assets/legal-firma.png" alt="Sucesiones y Declaratoria de Herederos en Buenos Aires" class="w-full h-full object-cover grayscale contrast-125 group-hover:scale-105 group-hover:grayscale-0 transition-all duration-700" />
-            <div class="service-overlay absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-transparent transition-all duration-300"></div>
-            <div class="absolute top-4 right-4 w-9 h-9 bg-white/90 group-hover:bg-white text-[#081014] flex items-center justify-center card-arrow shadow-sm">
-              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-            </div>
-            <div class="absolute bottom-5 left-5 right-5">
-              <span class="text-xs font-mono text-white/70 block mb-1">01 / DERECHO SUCESORIO</span>
-              <h3 class="text-2xl font-medium tracking-tight text-white">Sucesiones & Declaratoria de Herederos</h3>
+        <!-- Tarjeta 1: Sucesiones & Herencias (Ultra-HD Image + Stacking Accordion) -->
+        <div class="stack-card p-7 sm:p-10 flex flex-col md:flex-row items-center justify-between gap-8 hover:border-black/20">
+          <div class="relative w-full md:w-64 h-52 md:h-64 rounded-2xl overflow-hidden shrink-0 shadow-md bg-neutral-900 group">
+            <img src="assets/sucesiones-hd.jpg" alt="Sucesiones y Declaratoria de Herederos en Buenos Aires" class="w-full h-full object-cover grayscale contrast-125 group-hover:scale-105 group-hover:grayscale-0 transition-all duration-700" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+            <div class="absolute bottom-3 left-4 right-4 text-white">
+              <span class="text-[10px] font-mono text-white/70 block uppercase tracking-wider">01 / DERECHO SUCESORIO</span>
+              <span class="text-xs font-semibold">CABA & Provincia de Buenos Aires</span>
             </div>
           </div>
-          <p class="text-[#707070] text-sm leading-relaxed">
-            Tramitación ágil en CABA y Provincia de Buenos Aires. Inscripción de bienes, partición hereditaria y venta de propiedades por tracto abreviado con honorarios a cobrar al vender.
-          </p>
+          <div class="space-y-3 flex-1">
+            <div class="inline-flex items-center gap-2">
+              <span class="tag-mono text-emerald-700 font-bold px-2 py-0.5 bg-emerald-50 rounded border border-emerald-200">ESPECIALIDAD PRINCIPAL</span>
+            </div>
+            <h3 class="text-2xl sm:text-3xl font-medium tracking-tight text-[#081014]">
+              Sucesiones & Declaratoria de Herederos
+            </h3>
+            <p class="text-[#707070] text-sm sm:text-base leading-relaxed">
+              Tramitación ágil en CABA y Provincia de Buenos Aires. Inscripción de bienes, partición hereditaria y venta de propiedades por <strong>tracto abreviado</strong>. Convenios de honorarios con posibilidad real de <strong>abonar al momento de vender el inmueble</strong>.
+            </p>
+            <div class="pt-2">
+              <a href="https://api.whatsapp.com/send?phone=5492235809067&text=Hola%20Dr.%20M%C3%A1ximo%20Sabater%2C%20le%20escribo%20para%20iniciar%20una%20Sucesi%C3%B3n%20en%20Buenos%20Aires." target="_blank" class="inline-flex items-center gap-2.5 bg-[#081014] hover:bg-black text-white px-5 py-2.5 rounded-lg text-xs font-semibold tracking-wide transition shadow">
+                <span>Iniciar Sucesión por WhatsApp</span>
+                <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+              </a>
+            </div>
+          </div>
         </div>
 
-        <!-- Tarjeta 2: Divorcios Express (Foto genérica de acuerdo/mediación legal) -->
-        <div class="reveal-on-scroll delay-150 service-card group cursor-pointer" onclick="window.open('https://api.whatsapp.com/send?phone=5492235809067&text=Hola%20Dr.%20M%C3%A1ximo%20Sabater%2C%20le%20escribo%20para%20consultar%20por%20un%20tr%C3%A1mite%20de%20Divorcio.', '_blank')">
-          <div class="relative w-full aspect-[4/5] bg-neutral-900 overflow-hidden mb-5">
-            <img src="assets/legal-acuerdo.png" alt="Divorcios Express y Acuerdos de Familia" class="w-full h-full object-cover grayscale contrast-125 group-hover:scale-105 group-hover:grayscale-0 transition-all duration-700" />
-            <div class="service-overlay absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-transparent transition-all duration-300"></div>
-            <div class="absolute top-4 right-4 w-9 h-9 bg-white/90 group-hover:bg-white text-[#081014] flex items-center justify-center card-arrow shadow-sm">
-              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-            </div>
-            <div class="absolute bottom-5 left-5 right-5">
-              <span class="text-xs font-mono text-white/70 block mb-1">02 / DERECHO DE FAMILIA</span>
-              <h3 class="text-2xl font-medium tracking-tight text-white">Divorcios Express & Alimentos</h3>
+        <!-- Tarjeta 2: Divorcios Express (Ultra-HD Image + Stacking Accordion) -->
+        <div class="stack-card p-7 sm:p-10 flex flex-col md:flex-row items-center justify-between gap-8 hover:border-black/20">
+          <div class="relative w-full md:w-64 h-52 md:h-64 rounded-2xl overflow-hidden shrink-0 shadow-md bg-neutral-900 group">
+            <img src="assets/divorcios-hd.jpg" alt="Divorcios Express y Acuerdos de Familia" class="w-full h-full object-cover grayscale contrast-125 group-hover:scale-105 group-hover:grayscale-0 transition-all duration-700" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+            <div class="absolute bottom-3 left-4 right-4 text-white">
+              <span class="text-[10px] font-mono text-white/70 block uppercase tracking-wider">02 / DERECHO DE FAMILIA</span>
+              <span class="text-xs font-semibold">Unilaterales & Mutuo Acuerdo</span>
             </div>
           </div>
-          <p class="text-[#707070] text-sm leading-relaxed">
-            Divorcios unilaterales o de común acuerdo sin plazos de espera. Convenios reguladores para cuotas de alimentos, régimen comunicacional y división patrimonial de bienes gananciales.
-          </p>
+          <div class="space-y-3 flex-1">
+            <div class="inline-flex items-center gap-2">
+              <span class="tag-mono text-emerald-700 font-bold px-2 py-0.5 bg-emerald-50 rounded border border-emerald-200">RESOLUCIÓN ÁGIL</span>
+            </div>
+            <h3 class="text-2xl sm:text-3xl font-medium tracking-tight text-[#081014]">
+              Divorcios Express & Alimentos
+            </h3>
+            <p class="text-[#707070] text-sm sm:text-base leading-relaxed">
+              Divorcios unilaterales o de común acuerdo sin plazos de espera ni necesidad de invocar motivos. Convenios reguladores para cuotas de alimentos, régimen comunicacional con los hijos y partición equitativa de bienes gananciales.
+            </p>
+            <div class="pt-2">
+              <a href="https://api.whatsapp.com/send?phone=5492235809067&text=Hola%20Dr.%20M%C3%A1ximo%20Sabater%2C%20le%20escribo%20para%20consultar%20por%20un%20tr%C3%A1mite%20de%20Divorcio." target="_blank" class="inline-flex items-center gap-2.5 bg-[#081014] hover:bg-black text-white px-5 py-2.5 rounded-lg text-xs font-semibold tracking-wide transition shadow">
+                <span>Consultar Divorcio por WhatsApp</span>
+                <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+              </a>
+            </div>
+          </div>
         </div>
 
-        <!-- Tarjeta 3: Accidentes de Trabajo (Foto genérica de reunión legal de equipo) -->
-        <div class="reveal-on-scroll delay-200 service-card group cursor-pointer" onclick="window.open('https://api.whatsapp.com/send?phone=5492235809067&text=Hola%20Dr.%20M%C3%A1ximo%20Sabater%2C%20tuve%20un%20accidente%20de%20trabajo%20y%20quiero%20reclamar%20a%20la%20ART.', '_blank')">
-          <div class="relative w-full aspect-[4/5] bg-neutral-900 overflow-hidden mb-5">
-            <img src="assets/legal-reunion.png" alt="Accidentes de Trabajo ART y Defensa Laboral" class="w-full h-full object-cover grayscale contrast-125 group-hover:scale-105 group-hover:grayscale-0 transition-all duration-700" />
-            <div class="service-overlay absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-transparent transition-all duration-300"></div>
-            <div class="absolute top-4 right-4 w-9 h-9 bg-white/90 group-hover:bg-white text-[#081014] flex items-center justify-center card-arrow shadow-sm">
-              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-            </div>
-            <div class="absolute bottom-5 left-5 right-5">
-              <span class="text-xs font-mono text-white/70 block mb-1">03 / ACCIDENTES LABORALES</span>
-              <h3 class="text-2xl font-medium tracking-tight text-white">Reclamos a ART & Despidos</h3>
+        <!-- Tarjeta 3: Accidentes de Trabajo ART (Ultra-HD Image + Stacking Accordion) -->
+        <div class="stack-card p-7 sm:p-10 flex flex-col md:flex-row items-center justify-between gap-8 hover:border-black/20">
+          <div class="relative w-full md:w-64 h-52 md:h-64 rounded-2xl overflow-hidden shrink-0 shadow-md bg-neutral-900 group">
+            <img src="assets/laboral-art-hd.jpg" alt="Accidentes de Trabajo ART y Defensa Laboral" class="w-full h-full object-cover grayscale contrast-125 group-hover:scale-105 group-hover:grayscale-0 transition-all duration-700" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+            <div class="absolute bottom-3 left-4 right-4 text-white">
+              <span class="text-[10px] font-mono text-white/70 block uppercase tracking-wider">03 / DERECHO LABORAL</span>
+              <span class="text-xs font-semibold">Comisión Médica SRT & Juicio</span>
             </div>
           </div>
-          <p class="text-[#707070] text-sm leading-relaxed">
-            Reclamos indemnizatorios ante Comisión Médica (SRT) e impugnación judicial por incapacidad laboral. Despidos no registrados ("en negro") y cobro a porcentaje del resultado.
-          </p>
+          <div class="space-y-3 flex-1">
+            <div class="inline-flex items-center gap-2">
+              <span class="tag-mono text-emerald-700 font-bold px-2 py-0.5 bg-emerald-50 rounded border border-emerald-200">A PORCENTAJE DEL COBRO</span>
+            </div>
+            <h3 class="text-2xl sm:text-3xl font-medium tracking-tight text-[#081014]">
+              Reclamos a ART & Despidos
+            </h3>
+            <p class="text-[#707070] text-sm sm:text-base leading-relaxed">
+              Reclamos indemnizatorios ante Comisión Médica (SRT) e impugnación judicial por incapacidad laboral o enfermedades profesionales. Despidos sin causa y trabajo no registrado ("en negro"). Cobro a porcentaje contra resultado.
+            </p>
+            <div class="pt-2">
+              <a href="https://api.whatsapp.com/send?phone=5492235809067&text=Hola%20Dr.%20M%C3%A1ximo%20Sabater%2C%20tuve%20un%20accidente%20de%20trabajo%20y%20quiero%20reclamar%20a%20la%20ART." target="_blank" class="inline-flex items-center gap-2.5 bg-[#081014] hover:bg-black text-white px-5 py-2.5 rounded-lg text-xs font-semibold tracking-wide transition shadow">
+                <span>Reclamar a ART por WhatsApp</span>
+                <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+              </a>
+            </div>
+          </div>
         </div>
 
       </div>
-
     </div>
   </section>
 
@@ -710,6 +764,68 @@
         </div>
 
       </div>
+    </div>
+  </section>
+
+  
+  <!-- ==================== OFICINA DE ATENCIÓN PRESENCIAL CABA ==================== -->
+  <section id="sedes" class="bg-white py-20 sm:py-24 px-6 sm:px-12 border-b border-black/5">
+    <div class="max-w-[1240px] mx-auto">
+      
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-5 space-y-6">
+          <span class="reveal-on-scroll tag-mono block section-beacon">SEDE DE ATENCIÓN PRESENCIAL</span>
+          <h2 class="reveal-on-scroll delay-100 text-2xl sm:text-[32px] font-medium tracking-tight text-[#081014] leading-[1.2]">
+            Oficina de Atención Presencial en CABA.
+          </h2>
+          <p class="reveal-on-scroll delay-150 text-[#707070] text-base leading-relaxed">
+            Además de la tramitación 100% digital para toda la Provincia de Buenos Aires, el estudio dispone de sede física en la <strong>Ciudad Autónoma de Buenos Aires</strong> para reuniones presenciales, entrega de documentación y firma de poderes.
+          </p>
+
+          <div class="reveal-on-scroll delay-200 bg-[#f2f3f5] p-6 rounded-2xl border border-black/5 space-y-3">
+            <div class="flex items-center gap-2.5 text-[#081014] font-medium text-sm">
+              <i data-lucide="map-pin" class="w-4 h-4 text-emerald-600"></i>
+              <span>Av. Escalada 32, 1° B — CABA</span>
+            </div>
+            <div class="flex items-center gap-2.5 text-xs text-[#707070]">
+              <i data-lucide="clock" class="w-4 h-4 text-neutral-500"></i>
+              <span>Lunes a Viernes: 09:00 a 19:00 hs</span>
+            </div>
+            <div class="flex items-center gap-2.5 text-xs text-[#707070]">
+              <i data-lucide="message-square" class="w-4 h-4 text-neutral-500"></i>
+              <span>Consultas y turnos vía WhatsApp</span>
+            </div>
+
+            <div class="pt-2">
+              <a href="https://wa.me/5491176453584?text=Hola%2C%20me%20comunico%20para%20coordinar%20una%20visita%20al%20estudio%20en%20CABA." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-semibold text-[#081014] hover:text-emerald-700 transition">
+                <span>Coordinar visita al estudio en CABA</span>
+                <span class="text-sm font-bold">→</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="reveal-on-scroll delay-250 text-xs text-[#707070] flex items-center gap-4">
+            <span>• Mar del Plata: Moreno 2689 / Alberti 1220</span>
+          </div>
+        </div>
+
+        <!-- Google Maps Embed CABA -->
+        <div class="lg:col-span-7">
+          <div class="reveal-on-scroll delay-150 rounded-2xl overflow-hidden shadow-xl border border-black/10 aspect-[16/10] bg-neutral-100 relative">
+            <iframe 
+              src="https://maps.google.com/maps?q=Av.+Escalada+32,+Ciudad+Aut%C3%B3noma+de+Buenos+Aires&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+              class="w-full h-full border-0" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Mapa Sede CABA Dr. Máximo Sabater"
+            ></iframe>
+          </div>
+        </div>
+
+      </div>
+
     </div>
   </section>
 
